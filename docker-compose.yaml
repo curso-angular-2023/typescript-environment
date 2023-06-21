@@ -1,0 +1,10 @@
+services:
+  practica1:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: bash
+  
